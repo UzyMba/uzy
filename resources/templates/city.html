@@ -1,0 +1,22 @@
+<html xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Weather</title>
+</head>
+<body>
+<div>
+    <h3>Current City</h3>
+    <p th:text="${country.CountryName}">Norway</p>
+    <h3>Description</h3>
+    <p th:text="${currentCity.description}">Norway</p>
+    <h3>Temperature</h3>
+    <p th:text="${currentCity.temperature}+ ' &#8457;'">Temperature</p>
+    <h3>Feels Like</h3>
+    <p th:text="${currentCity.feelsLike}+ ' &#8457;'">Feels Like</p>
+    <h3>Wind Speed</h3>
+    <p th:text="${currentCitywindSpeed}+' mph'"></p>
+
+</div>
+
+</body>
+</html>
